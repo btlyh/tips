@@ -4,7 +4,7 @@
 erlang版本：otp23
   
 ### 1.根据官方文档，客户端会调用本地SDK函数生成如下参数：
-**PublicKeyURL**
+**PublicKeyURL**  
 **PlayerID**  
 **BundleID**  
 **Timestamp**  
