@@ -43,6 +43,7 @@ verify(PublicKeyURL, PlayerID, BundleID, Timestamp, Signature, Salt) ->
 		public_key:verify(DataBin, sha256, base64:decode(Signature), RSAPublicKey)
 	catch
 		Err:Reason:Stack ->
-			io:format("verify fail,Err = ~p~n, Reason = ~p~n,Stack = ~p~n", [Err, Reason, Stack])
+			io:format("verify fail,Err = ~p~n, Reason = ~p~n,Stack = ~p~n", [Err, Reason, Stack]),
+			false
 	end.
   ```
